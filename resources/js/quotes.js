@@ -16,7 +16,7 @@ var welcomeAffirmationWords = ['loved', 'cherished', 'awesome', 'amazing', 'a st
     'valuable', 'vibrant', 'vivacious', 'warm', 'welcomed', 'whole', 'wise', 'worthy', 'zestful'];
 var welcomeGreetingWords = ['counted your blessings', 'smiled', 'loved someone', 'loved yourself', 'breathed deeply',
     'read His Word', 'meditated', 'blessed someone', 'encouraged someone', 'hugged someone',
-    'enjoyed your life', 'treated yourself well', 'walked in peace'];
+    'enjoyed your life', 'treated yourself well', 'been at peace'];
 var displayQuote = false;
 var displayImage = false;
 
