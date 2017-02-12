@@ -1,0 +1,234 @@
+/*******************************
+BASIC SETUP
+*******************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/*******************************
+REUSABLE COMPONENTS
+*******************************/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+/*--- HEADINGS ---*/
+
+h1,
+h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 500;
+    word-spacing: 2px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+h2 {
+    font-size: 150%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #f2b234;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/*--- PARAGRAPH ---*/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+p {
+    font-size: 90%;
+}
+
+
+/*--- BUTTONS ---*/
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    box-shadow: 2px 2px 4px #7EB6FF;
+    /*margin-bottom: 20px;*/
+}
+
+.btn-love {
+    border: 3px solid #173D8D;
+    background-color: #f053dc;
+    margin-right: 20px;
+}
+
+.btn-love:hover,
+.btn-love:active {
+    background-color: #eb15cf;
+    border: 3px solid #b1c6f2;
+    /*font-weight: 400;
+    margin-right: 19px;*/
+}
+
+.btn-inspiration {
+    border: 3px solid #173D8D;
+    background-color: #f2b234;
+    margin-left: 20px;
+}
+
+.btn-inspiration:hover,
+.btn-inspiration:active {
+    background-color: #e49c0f;
+    border: 3px solid #b1c6f2;
+    /*font-weight: 400;
+    margin-left: 17px;*/
+}
+
+
+/*******************************
+HEADER, QUOTES, AND IMAGES
+*******************************/
+
+header {
+    background-image: linear-gradient(rgba(0, 94, 255, 0.6), rgba(76, 0, 103, 0.6)), url(img/hero.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    padding-top: 100px;
+    text-align: center;
+}
+
+/*should look into making this fade in*/
+img {
+    max-width: 100%;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+.quoteImages {
+    margin-top: 20px;
+}
+
+.quoteStyle {
+    font-style: italic;
+    font-size: 120%;
+    line-height: 145%;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+
+}
+
+
+
+/*******************************
+NAVIGATION
+*******************************/
+
+.welcome-text {
+    float: left;
+    text-shadow: 1px 1px 2px #000;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    text-shadow: 1px 1px 2px #000;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e49c0f;
+}
+
+
+/*******************************
+FOOTER
+*******************************/
+
+.social-links {
+    list-style: none;
+    text-align: center;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.icon-spacing {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #777;
+}
+
+.fa-youtube,
+.fa-facebook,
+.fa-twitter {
+    transition: color 0.2s;
+}
+
+.fa-youtube:hover {
+    color: #bb0000;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-twitter:hover {
+    color: #55acee;
+}

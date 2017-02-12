@@ -1,0 +1,90 @@
+
+/* Big tablet to 1200px (widths smaller than the 1140px row */
+@media only screen and (max-width: 1200px) {
+
+}
+
+
+/* Small tablet to big tablet: from 768 to 1023px */
+@media only screen and (max-width: 1023px) {
+
+}
+
+
+/* Small phones to small tablets: from 481 to 767px */
+@media only screen and (max-width: 767px) {
+
+}
+
+
+/* Landscape orientation for iPhone 6+/7+ */
+@media only screen and (max-height: 414px) {
+
+    header {
+        height: 200vh;
+    }
+
+}
+
+/* Landscape orientation for iPhone 6/7 */
+@media only screen and (max-height: 375px) {
+
+    header {
+        height: 200vh;
+    }
+
+}
+
+/* Landscape orientation for iPhone 5 */
+@media only screen and (max-height: 320px) {
+
+    header {
+        height: 250vh;
+    }
+
+}
+
+/* Portrait orientation for iPhone 6+/7+ */
+@media only screen and (max-height: 736px) {
+
+    header {
+        height: 250vh;
+    }
+
+}
+
+/* Portrait orientation for iPhone 6/7 */
+@media only screen and (max-height: 667px) {
+
+    header {
+        height: 250vh;
+    }
+
+}
+
+/* Portrait orientation for iPhone 5 */
+@media only screen and (max-width: 320px) {
+
+    header {
+        height: 250vh;
+    }
+
+    .btn-love {
+        margin: auto;
+    }
+
+    .btn-love:hover,
+    .btn-love:active {
+        margin: auto;
+    }
+
+    .btn-inspiration {
+        margin: auto;
+    }
+
+    .btn-inspiration:hover,
+    .btn-inspiration:active {
+        margin: auto;
+    }
+
+}
