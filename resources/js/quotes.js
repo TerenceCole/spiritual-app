@@ -24,7 +24,7 @@ APP BUTTONS AND CLICK EVENTS
 
 document.querySelector('.btn-love').addEventListener('click', btnLove);
 document.querySelector('.btn-inspiration').addEventListener('click', btnInspiration);
-document.querySelector('#images').addEventListener('click', quoteImages);
+// document.querySelector('#images').addEventListener('click', quoteImages);
 
 
 /*******************************
@@ -34,7 +34,6 @@ RANDOMLY SELECTS AND DISPLAYS A WELCOME AFFIRMATION
 function welcomeAffirmation() {
     var myRandom =  Math.floor(Math.random() * welcomeAffirmationWords.length);
     document.getElementById('welcome').innerHTML = welcomeAffirmationWords[myRandom];
-    //document.getElementById('welcome').textContent = welcomeAffirmationWords[myRandom]; --> Another way to display the affimation
 }
 welcomeAffirmation();
 
