@@ -26,8 +26,8 @@ var displayImage = false;
 APP BUTTONS AND CLICK EVENTS
 *******************************/
 
-document.querySelector('.btn-love').addEventListener('click', btnLove);
-document.querySelector('.btn-inspiration').addEventListener('click', btnInspiration);
+document.querySelector('.btn-love').addEventListener('click', btnLoveAndFaith);
+document.querySelector('.btn-inspiration').addEventListener('click', btnBible);
 // document.querySelector('#images').addEventListener('click', quoteImages);
 
 
@@ -53,7 +53,7 @@ RANDOMLY SELECTS AND DISPLAYS A TEXT QUOTE FROM DATABASE
 *******************************/
 
 
-function btnLove() {
+function btnBible() {
     // var category = '&category=love';
     var ourRequest = new XMLHttpRequest(); //opens new XML request
     ourRequest.open('POST', 'https://quotes.rest/quote/search.json?author=bible&' + clave); //gets JSON data
@@ -66,8 +66,8 @@ function btnLove() {
     ourRequest.send();
 }
 
-function btnInspiration() {
-    var category = '&category=hope&faith';
+function btnLoveAndFaith() {
+    var category = '&category=love&faith';
     var ourRequest = new XMLHttpRequest(); //opens new XML request
     ourRequest.open('POST', 'https://quotes.rest/quote/search.json?' + clave + category); //gets JSON data
 
