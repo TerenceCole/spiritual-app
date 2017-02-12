@@ -44,9 +44,9 @@ RANDOMLY SELECTS AND DISPLAYS A TEXT QUOTE FROM DATABASE
 
 
 function btnLove() {
-    var category = '&category=love';
+    // var category = '&category=love';
     var ourRequest = new XMLHttpRequest(); //opens new XML request
-    ourRequest.open('POST', 'https://quotes.rest/quote/search.json?' + clave + category); //gets JSON data
+    ourRequest.open('POST', 'https://quotes.rest/quote/search.json?author=bible&' + clave); //gets JSON data
 
     ourRequest.onload = function() {
         var ourData = JSON.parse(ourRequest.responseText);
@@ -57,7 +57,7 @@ function btnLove() {
 }
 
 function btnInspiration() {
-    var category = '&category=inspiration';
+    var category = '&category=hope&faith';
     var ourRequest = new XMLHttpRequest(); //opens new XML request
     ourRequest.open('POST', 'https://quotes.rest/quote/search.json?' + clave + category); //gets JSON data
 
