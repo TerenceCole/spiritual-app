@@ -14,6 +14,10 @@ var welcomeAffirmationWords = ['loved', 'cherished', 'awesome', 'amazing', 'a st
     'passionate', 'peaceful', 'playful', 'positive', 'precious', 'radiant', 'refreshed', 'renewed', 'resilient',
     'sensational', 'serene', 'spectacular', 'strong', 'terrific', 'trusting', 'unlimited', 'limitless', 'uplifted',
     'valuable', 'vibrant', 'vivacious', 'warm', 'welcomed', 'whole', 'wise', 'worthy', 'zestful'];
+var welcomeGreetingWords = ['counted your blessings', 'smiled', 'loved someone', 'loved yourself', 'breathed deeply',
+    'read His Word', 'meditated', 'blessed someone', 'encouraged someone', 'called a friend', 'hugged someone',
+    'enjoyed your life', 'given life your best', 'eaten well', 'exercised', 'treated yourself well', 'loved your life',
+    'told someone you love them', 'danced in victory', 'walked in peace'];
 var displayQuote = false;
 var displayImage = false;
 
@@ -28,7 +32,7 @@ document.querySelector('.btn-inspiration').addEventListener('click', btnInspirat
 
 
 /*******************************
-RANDOMLY SELECTS AND DISPLAYS A WELCOME AFFIRMATION
+RANDOMLY SELECTS AND DISPLAYS A WELCOME AFFIRMATION & WELCOME GREETING
 *******************************/
 
 function welcomeAffirmation() {
@@ -36,6 +40,12 @@ function welcomeAffirmation() {
     document.getElementById('welcome').innerHTML = welcomeAffirmationWords[myRandom];
 }
 welcomeAffirmation();
+
+function welcomeGreeting() {
+    var myRandom =  Math.floor(Math.random() * welcomeGreetingWords.length);
+    document.getElementById('greeting').innerHTML = welcomeGreetingWords[myRandom];
+}
+welcomeGreeting();
 
 
 /*******************************
