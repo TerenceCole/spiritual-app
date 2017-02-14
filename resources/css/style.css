@@ -59,6 +59,10 @@ h2:after {
     margin-top: 20px;
 }
 
+.smiley {
+    display: inline-block;
+}
+
 /*--- PARAGRAPH ---*/
 
 .long-copy {
@@ -217,7 +221,8 @@ FOOTER
 
 .fa-youtube,
 .fa-facebook,
-.fa-twitter {
+.fa-twitter,
+.fa-github {
     transition: color 0.2s;
 }
 
@@ -231,4 +236,8 @@ FOOTER
 
 .fa-twitter:hover {
     color: #55acee;
+}
+
+.fa-github:hover {
+    color: #eee;
 }
